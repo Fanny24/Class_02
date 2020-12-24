@@ -9,13 +9,12 @@ public class Amazon2 {
 
     public static void main(String[] args) {
         /*
-         * tc 1
-         *
-         * */
+         * TC_002
+       */
         WebDriver driver = null;
         WebDriverManager.chromedriver().version("87.0.4280.88").setup();
         driver = new ChromeDriver();
-        //abrimos el browser
+
         driver.get("https://www.amazon.com/");
 
         try {
@@ -24,13 +23,12 @@ public class Amazon2 {
             e.printStackTrace();
         }
 
-        //seleccionamos el textbox de busqueda y colocamos un criterio
 
         String localizadorXpath = "//*[@id=\'twotabsearchtextbox\']";
 
         WebElement inputBusqueda = null;
 
-        //driver al colocarle un xpath se convierte en un webelemnt
+
         inputBusqueda = driver.findElement(By.xpath(localizadorXpath));
         inputBusqueda.sendKeys("zapatillas");
         try {
@@ -56,15 +54,12 @@ public class Amazon2 {
             e.printStackTrace();
         }
 
-
-
-        //--
+        /**--------------**/
 
         String localizadorXpath1 = "//*[@id=\'twotabsearchtextbox\']";
 
         WebElement inputBusqueda1 = null;
 
-        //driver al colocarle un xpath se convierte en un webelemnt
         inputBusqueda1 = driver.findElement(By.xpath(localizadorXpath1));
         inputBusqueda1.clear();
         inputBusqueda1.sendKeys("zapatillas");
