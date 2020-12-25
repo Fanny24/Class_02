@@ -1,7 +1,7 @@
 #TEST CASE: Imprmir descripción y precio de un PRODUCTO <zapatilla>#
 
 DESCRIPCION
-Como cliente quiero imprimir en consola la descripción y precio de un producto en "amazon.com".
+Como cliente quiero visualizar la descripción y precio de un producto en "amazon.com".
 
 PRECONDICION
 1. Cliente visita la página web "amazon.com"
