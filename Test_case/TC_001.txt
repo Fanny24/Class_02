@@ -1,0 +1,55 @@
+#TEST CASE: Imprmir descripción y precio de un PRODUCTO <zapatilla>#
+
+DESCRIPCION
+Como cliente quiero imprimir en consola la descripción y precio de un producto en "amazon.com".
+
+PRECONDICION
+1. Cliente visita la página web "amazon.com"
+
+ID  |PASOS                                            |RESULTADO ESPERADO
+TC01|1. Visualizar pantalla inicial de "amazon.com"   |Éxito: Se visualiza campo de "Búsqueda" habilitado
+                                                      |Error: Se visualiza campo de "Búsqueda" inhabilitado
+    |2. Ingresar el texto <zapatilla>                 |Éxito: Se visualiza texto ingresado
+                                                      |Error: No se visualiza texto completo (no se aceptan algunos caracteres)
+    |3. Presionar la tecla "Enter"                    |Éxito: Se muestra un listado de productos
+                                                      |Error_01: No se muestran resultados
+                                                      |Error_02: Se muestra mensaje "Producto NO Encontrado"
+    |4. Seleccionar el primer producto de la lista    |Éxito: Producto seleccionado se encuentra en la categoria <zapatilla>
+                                                      |Se visualiza los campos: descripción, precio y descuento mostrado en porcentaje
+                                                      |Error_01: Producto seleccionado NO se encuentra en la categoria <zapatilla>
+                                                      |Error_02: No se muestra descripción y/o precio del producto.
+                                                      |Error_03: Descuento no se muestra en porcentaje
+    |5.
+
+ID  |PASOS                                            |RESULTADO ESPERADO
+TC02|1. Visualizar pantalla inicial de "amazon.com"   |Éxito: Se visualiza campo de "Búsqueda" habilitado y el icono "Lupa"
+                                                      |Error_01: Se visualiza campo de "Búsqueda" inhabilitado
+                                                      |Error_02: No se visualiza el icono "Lupa"
+    |2. Ingresar el texto <zapatilla>                 |Éxito: Se visualiza texto ingresado
+                                                      |Error: No se visualiza texto completo (no se aceptan algunos caracteres)
+    |3. Seleccionar icono "Lupa"                      |Éxito: Se muestra un listado de productos
+                                                      |Error_01: No se muestran resultados
+                                                      |Error_02: Se muestra mensaje "Producto NO Encontrado"
+    |4. Seleccionar el primer producto visualizado    |Exito: Producto seleccionado se encuentra en la categoria <zapatilla>
+                                                      |Se visualiza los campos: descripción, precio y descuento mostrado en porcentaje
+                                                      |Error_01: Producto seleccionado NO se encuentra en la categoria <zapatilla>
+                                                      |Error_02: No se muestra descripción y/o precio del producto.
+                                                      |Error_03: Descuento no se muestra en porcentaje
+
+ID  |PASOS                                            |RESULTADO ESPERADO
+TC03|1. Visualizar pantalla inicial de "amazon.com"   |Éxito: Se visualiza campo de "Búsqueda" habilitado
+                                                      |Error_01: Se visualiza campo de "Búsqueda" inhabilitado
+    |2. Ingresar el texto <zapatilla>                 |Éxito: Se visualiza "listado de sugerencias" relacionadas
+                                                      |Error_01: NO se visualiza "listado de sugerencias"
+                                                      |Error_02: "Listado de sugerencias" NO contiene el texto <zapatilla>
+    |3. Seleccionar el primer item del listado        |Éxito: Se muestra un listado de productos
+                                                      |Error_01: No se muestran resultados
+                                                      |Error_02: Se muestra mensaje "Producto NO Encontrado"
+    |4. Seleccionar el primer producto visualizado    |Éxito: Producto seleccionado se encuentra en la categoria <zapatilla>
+                                                      |Se visualiza los campos: descripción, precio y descuento mostrado en porcentaje
+                                                      |Error_01: Producto seleccionado NO se encuentra en la categoria <zapatilla>
+                                                      |Error_02: No se muestra descripción y/o precio del producto.
+                                                      |Error_03: Descuento no se muestra en porcentaje
+
+POSTCONDICION
+Se mostrarán los resultados de acuerdo con el criterio de búsqueda.
